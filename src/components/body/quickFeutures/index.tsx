@@ -14,7 +14,38 @@ export default function QuickFeutures() {
           <span>Launch live server</span>
         </div>
         <h5>Quick settings</h5>
-        <h5>Consumption Rate</h5>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label" htmlFor="flexCheckDefault">
+            Default checkbox
+          </label>
+        </div><div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label" htmlFor="flexCheckDefault">
+            Default checkbox
+          </label>
+        </div><div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label className="form-check-label" htmlFor="flexCheckDefault">
+            Default checkbox
+          </label>
+        </div>
+        <h5 className="consumption">Consumption Rate</h5>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="315"

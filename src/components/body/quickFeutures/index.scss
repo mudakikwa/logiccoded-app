@@ -1,5 +1,8 @@
-@import "../../sass/variables.scss";
+@import '../../sass/variables.scss';
 #quickFeutures {
+  .consumption{
+      margin-top:(40px/$divider);
+    }
   padding-left: (94px / $divider);
   h5 {
     font-family: $trykker;
@@ -15,14 +18,36 @@
     border-radius: (30px / $divider);
     background: #000;
     border: #000;
-    margin-bottom: (21px/$divider);
+    margin-bottom: (21px / $divider);
   }
   .server-image {
     height: (20px / $divider);
     background: transparent;
-    margin-right: (30px/$divider);
+    margin-right: (30px / $divider);
   }
-  svg{
-      height:200px;
+
+  .form-check-label {
+    height: 27px;
+    font-family: $noto_regular;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    margin-left: (20px / $divider);
+    margin-top: (5px / $divider);
+  }
+  .form-check-input {
+    height: (30px / $divider);
+    width: (30px / $divider);
+    margin-right: (20px / $divider);
+    border-radius: 6px;
+    background: transparent;
+    border: 2px solid #00000b;
+    outline: 0px !important;
+    margin-bottom: (20px/$divider);
+
+  }
+  svg {
+    height: 200px;
   }
 }

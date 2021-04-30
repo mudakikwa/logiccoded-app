@@ -3,6 +3,7 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 @import "~bootstrap";
+@import "./components/fonts/font.scss";
 @import "./components/sass/variables.scss";
 @import "./components/header/index.scss";
 @import "./components/sidebar/index.scss";
