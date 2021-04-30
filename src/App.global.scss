@@ -1,0 +1,18 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import "~bootstrap";
+@import "./components/sass/variables.scss";
+@import "./components/header/index.scss";
+@import "./components/sidebar/index.scss";
+@import "./components/body/index.scss";
+@import "./components/body/quickFeutures/index.scss";
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: #ededff;
+  padding-top:(31px/$divider);
+  padding-left:(50px/$divider);
+  padding-right:(50px/$divider);
+}

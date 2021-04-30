@@ -1,0 +1,11 @@
+@import "../sass/variables.scss";
+#header {
+  padding-top: 23.25px;
+  padding-left: $header-padding;
+  padding-right: $header-padding;
+  margin-bottom: 23.25px;
+  img {
+    height: 22.5px;
+    width: auto;
+  }
+}

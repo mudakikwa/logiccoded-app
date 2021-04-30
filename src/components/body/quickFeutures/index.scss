@@ -1,0 +1,28 @@
+@import "../../sass/variables.scss";
+#quickFeutures {
+  padding-left: (94px / $divider);
+  h5 {
+    font-family: $trykker;
+    font-weight: normal;
+    font-size: (30px / $divider);
+    text-align: left;
+    color: #000;
+    margin-bottom: (28px / $divider);
+  }
+  .btn {
+    width: 100%;
+    height: (60px / $divider);
+    border-radius: (30px / $divider);
+    background: #000;
+    border: #000;
+    margin-bottom: (21px/$divider);
+  }
+  .server-image {
+    height: (20px / $divider);
+    background: transparent;
+    margin-right: (30px/$divider);
+  }
+  svg{
+      height:200px;
+  }
+}

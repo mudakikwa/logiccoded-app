@@ -1,0 +1,11 @@
+@import "~bootstrap";
+@import "./components/sass/variables.scss";
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: #ededff;
+  padding-top:(31px/$divider);
+  padding-left:(50px/$divider);
+  padding-right:(50px/$divider);
+}
+
