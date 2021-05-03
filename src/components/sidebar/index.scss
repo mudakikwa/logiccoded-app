@@ -1,13 +1,14 @@
 @import '../sass/variables.scss';
 #sidebar {
   padding-left: $header-padding;
-  min-height: 75vh;
-  // padding-top: (41px / $divider);
-  display: grid;
-  place-items: center;
-  .all-elements {
-    width: (30px / $divider);
-  }
+  min-height: 100vh;
+  padding-top: (28px / $divider);
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+  max-width: (30px / $divider);
+  margin-left: (38.2px/$divider);
   .row {
     img,
     svg {

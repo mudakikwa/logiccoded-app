@@ -12,8 +12,8 @@ import ProfileImg from './src/profile.jpg';
 
 export default function SideBar() {
   return (
-    <div className="col-md-1 px-0" id="sidebar">
-      <div className="all-elements">
+    <div className="col-md-1" id="sidebar">
+      <div>
         <div className="row">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -175,6 +175,8 @@ export default function SideBar() {
             />
           </svg>
         </div>
+      </div>
+      <div>
         <div className="row">
           <h6 className="px-0 mx-0">Nikita Belov</h6>
         </div>
