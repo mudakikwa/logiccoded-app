@@ -2,7 +2,7 @@
 #sidebar {
   padding-left: $header-padding;
   min-height: 75vh;
-  padding-top: (41px / $divider);
+  // padding-top: (41px / $divider);
   display: grid;
   place-items: center;
   .all-elements {
@@ -25,16 +25,17 @@
     h6 {
       writing-mode: vertical-rl;
       margin-bottom: (21px / $divider);
-      font-family: Trykker;
+      font-family: $graphik-light;
+      color:$white;
     }
     .profile-image {
       height: 30px;
       width: 30px;
-      background-color: black;
+      background-color: $white;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px #000 solid;
+      border: 1px $white solid;
     }
   }
 }

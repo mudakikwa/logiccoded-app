@@ -12,6 +12,10 @@
       stroke: '#D2DED2';
       transition: all 0.3s ease-out;
     }
+    rect {
+      stroke: 'red';
+      transition: all 0.3s ease-out;
+    }
     &:hover {
       path {
         stroke: $violet;

@@ -39,7 +39,7 @@ export default function Header() {
                       stroke="#D2DED2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="1"
+                      strokeWidth="2"
                     />
                     <path
                       id="Path_6"
@@ -50,7 +50,7 @@ export default function Header() {
                       stroke="#D2DED2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="1"
+                      strokeWidth="2"
                     />
                   </g>
                 </g>
@@ -76,7 +76,7 @@ export default function Header() {
                     stroke="#D2DED2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="1"
+                    strokeWidth="2"
                   />
                   <path
                     id="Path_8"
@@ -86,7 +86,7 @@ export default function Header() {
                     stroke="#D2DED2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="1"
+                    strokeWidth="2"
                   />
                   <path
                     id="Path_9"
@@ -96,7 +96,7 @@ export default function Header() {
                     stroke="#D2DED2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="1"
+                    strokeWidth="2"
                   />
                 </g>
               </svg>
@@ -122,7 +122,7 @@ export default function Header() {
                     stroke="#D2DED2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="1"
+                    strokeWidth="2"
                   />
                   <path
                     id="Path_11"
@@ -133,7 +133,7 @@ export default function Header() {
                     stroke="#D2DED2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="1"
+                    strokeWidth="2"
                   />
                 </g>
               </svg>

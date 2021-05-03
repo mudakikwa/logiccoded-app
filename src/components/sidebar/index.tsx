@@ -17,6 +17,69 @@ export default function SideBar() {
         <div className="row">
           <svg
             xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <g id="plus-circle" transform="translate(-1 -1)">
+              <path
+                id="Path_69"
+                data-name="Path 69"
+                d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z"
+                transform="translate(2 2)"
+                fill="none"
+                stroke="#d2ded2"
+                strokeLinecap="round"
+                strokeWidth="2"
+              />
+              <path
+                id="Path_71"
+                data-name="Path 71"
+                d="M0,0V8"
+                transform="translate(17 13)"
+                fill="none"
+                stroke="#d2ded2"
+                strokeLinecap="round"
+                strokeWidth="2"
+              />
+              <path
+                id="Path_70"
+                data-name="Path 70"
+                d="M0,0H8"
+                transform="translate(13 17)"
+                fill="none"
+                stroke="#d2ded2"
+                strokeLinecap="round"
+                strokeWidth="2"
+              />
+            </g>
+          </svg>
+        </div>
+        <div className="row">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32.001"
+            viewBox="0 0 32 32.001"
+          >
+            <g id="grid" transform="translate(-2 -2)">
+              <path
+                id="Union_1"
+                data-name="Union 1"
+                d="M-2027.667-1444v-11.667H-2016V-1444Zm-18.333,0v-11.667h11.667V-1444Zm18.333-18.334V-1474H-2016v11.667Zm-18.333,0V-1474h11.667v11.667Z"
+                transform="translate(2049 1477)"
+                fill="rgba(0,0,0,0)"
+                stroke="#d2ded2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              />
+            </g>
+          </svg>
+        </div>
+        <div className="row">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
             width="34.333"
             height="31"
             viewBox="0 0 34.333 31"
@@ -29,84 +92,66 @@ export default function SideBar() {
               stroke="#D2DED2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="1"
+              strokeWidth="2"
             />
           </svg>
         </div>
         <div className="row">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="42.265"
-            height="31.018"
-            viewBox="0 0 42.265 31.018"
+            width="35.396"
+            height="31"
+            viewBox="0 0 35.396 31"
           >
             <path
-              id="cloud"
-              d="M32.879,15.25H30.516A15,15,0,1,0,16,34H32.879a9.374,9.374,0,0,0,0-18.749Z"
-              transform="translate(-0.488 -3.482)"
+              id="heart"
+              d="M33.292,5.65a9.05,9.05,0,0,0-12.8,0L18.746,7.395,17,5.65a9.052,9.052,0,0,0-12.8,12.8L5.944,20.2,18.746,33l12.8-12.8,1.744-1.744a9.05,9.05,0,0,0,0-12.8Z"
+              transform="translate(-1.049 -2.498)"
               fill="none"
               stroke="#D2DED2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="1"
+              strokeWidth="2"
             />
           </svg>
         </div>
         <div className="row">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="31"
-            height="31"
-            viewBox="0 0 31 31"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
           >
-            <g id="grid" transform="translate(-2.5 -2.5)">
-              <rect
-                id="Rectangle_7"
-                data-name="Rectangle 7"
-                width="11.667"
-                height="11.667"
-                transform="translate(3 3)"
+            <g id="plus-circle" transform="translate(-1 -1)">
+              <path
+                id="Path_69"
+                data-name="Path 69"
+                d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z"
+                transform="translate(2 2)"
                 fill="none"
-                stroke="#D2DED2"
+                stroke="#d2ded2"
                 strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1"
+                strokeWidth="2"
               />
-              <rect
-                id="Rectangle_8"
-                data-name="Rectangle 8"
-                width="11.667"
-                height="11.667"
-                transform="translate(21.333 3)"
+              <path
+                id="Path_71"
+                data-name="Path 71"
+                d="M0,0V8"
+                transform="translate(17 13)"
                 fill="none"
-                stroke="#D2DED2"
+                stroke="#d2ded2"
                 strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1"
+                strokeWidth="2"
               />
-              <rect
-                id="Rectangle_9"
-                data-name="Rectangle 9"
-                width="11.667"
-                height="11.667"
-                transform="translate(21.333 21.333)"
+              <path
+                id="Path_70"
+                data-name="Path 70"
+                d="M0,0H8"
+                transform="translate(13 17)"
                 fill="none"
-                stroke="#D2DED2"
+                stroke="#d2ded2"
                 strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1"
-              />
-              <rect
-                id="Rectangle_10"
-                data-name="Rectangle 10"
-                width="11.667"
-                height="11.667"
-                transform="translate(3 21.333)"
-                fill="none"
-                stroke="#D2DED2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1"
+                strokeWidth="2"
               />
             </g>
           </svg>
@@ -126,88 +171,8 @@ export default function SideBar() {
               stroke="#D2DED2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="1"
+              strokeWidth="2"
             />
-          </svg>
-        </div>
-        <div className="row">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="31"
-            height="31"
-            viewBox="0 0 31 31"
-          >
-            <g id="plus-circle" transform="translate(-1.5 -1.5)">
-              <circle
-                id="Ellipse_5"
-                data-name="Ellipse 5"
-                cx="15"
-                cy="15"
-                r="15"
-                transform="translate(2 2)"
-                fill="none"
-                stroke="#D2DED2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1"
-              />
-              <line
-                id="Line_4"
-                data-name="Line 4"
-                y2="8"
-                transform="translate(17 13)"
-                fill="none"
-                stroke="#D2DED2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1"
-              />
-              <line
-                id="Line_5"
-                data-name="Line 5"
-                x2="8"
-                transform="translate(13 17)"
-                fill="none"
-                stroke="#D2DED2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1"
-              />
-            </g>
-          </svg>
-        </div>
-        <div className="row">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="31.207"
-            height="31.207"
-            viewBox="0 0 31.207 31.207"
-          >
-            <g id="send" transform="translate(-1.5 -56.293)">
-              <line
-                id="Line_6"
-                data-name="Line 6"
-                x1="16.5"
-                y2="16.5"
-                transform="translate(15.5 57)"
-                fill="none"
-                stroke="#D2DED2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1"
-              />
-              <path
-                id="Path_12"
-                data-name="Path 12"
-                d="M32,2,21.5,32l-6-13.5L2,12.5Z"
-                transform="translate(0 55)"
-                fill="none"
-                stroke="#D2DED2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1"
-              />
-            </g>
           </svg>
         </div>
         <div className="row">
