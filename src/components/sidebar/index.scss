@@ -8,9 +8,17 @@
   align-content: space-between;
   flex-direction: column;
   width: (30px / $divider);
-  .user{
-    position:absolute;
+  .user {
+    position: absolute;
     bottom: 43px;
+    &:hover {
+      .profile-image {
+        border: 2px $violet solid;
+      }
+      h6 {
+        opacity:1;
+      }
+    }
   }
   .row {
     img,
@@ -30,7 +38,10 @@
       writing-mode: vertical-rl;
       margin-bottom: (21px / $divider);
       font-family: $graphik-light;
-      color:$white;
+      color: $white;
+      opacity:0.2;
+      transition:all 0.3s ease-out;
+
     }
     .profile-image {
       height: 30px;
@@ -39,7 +50,8 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px $white solid;
+      border: 2px $white solid;
+      transition:all 0.3s ease-out;
     }
   }
 }

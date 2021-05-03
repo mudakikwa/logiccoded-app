@@ -1,4 +1,4 @@
-@import "../sass/variables.scss";
+@import '../sass/variables.scss';
 #body {
   height: 100%;
   min-height: calc(100vh - 23.25px - 30.75px);
@@ -7,48 +7,52 @@
   padding-top: (29px / $divider);
   padding-left: (42px / $divider);
   h4 {
-    font-family: $trykker;
-    font-weight: normal;
+    font-family: $graphik-light;
+    font-weight: 300;
     font-size: (37px / $divider);
     text-align: left;
-    color: #000;
-    margin-bottom: (9px / $divider);
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: (12px / $divider);
   }
-  .code-card{
-      margin-bottom: (30px/$divider);
-      border-radius: (18px / $divider);
-    background: #dbdbff;
+  .code-card {
+    margin-bottom: (20px / $divider);
+    border-radius: (9px / $divider);
+    background: #262926;
     padding: (17px / $divider);
   }
-  .icon{
-      padding-right: (30px/$divider)!important;
+  .icon {
+    padding-right: (30px / $divider) !important;
   }
   .coding-icon {
+    height: 100%;
     border-radius: (9px / $divider);
-    min-height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-right: (30px/$divider);
+    background: #121312;
+    display: grid;
+    place-items: center;
   }
   .title {
-    font-family: $trykker;
+    font-family: $graphik-light;
     font-weight: normal;
     font-size: (23px / $divider);
     text-align: left;
-    color: #000;
-    margin-bottom: (5px / $divider);
+    color: $white;
+    margin-bottom: (15px / $divider);
+    text-transform: capitalize;
   }
   .status {
     height: (20px / $divider);
     margin-bottom: (5px / $divider);
   }
   .description {
-    font-family: $noto_regular;
+    max-height: (71px / $divider);
+    min-height: (71px / $divider);
+    font-family: $graphik-light;
     font-weight: normal;
     font-size: (16px / $divider);
+    line-height: (24px / $divider);
     text-align: left;
-    color: #000;
+    color: $white;
     opacity: 0.49;
   }
   .source {
@@ -64,10 +68,10 @@
     color: #7171ff;
   }
   .numbering {
-    font-family: $noto_bold;
-    font-weight: 500;
-    font-size: (29px/$divider);
+    font-family: $graphik-light;
+    font-weight: 900;
+    font-size: (29px / $divider);
     text-align: right;
-    color: #00000b;
+    color: $white;
   }
 }
