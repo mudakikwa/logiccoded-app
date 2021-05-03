@@ -16,7 +16,7 @@ export default function Body() {
     <div className="col-md-11" id="body">
       <h4 className="mx-0 px-0">Rendered codes</h4>
       <div className="row mx-0 px-0">
-        <div className="col-md-7 code-indicator px-0 ">
+        <div className="col-md-8  px-0 code-indicator">
           <div className="row mx-0 code-card">
             <div className="col-md-2 px-0 icon">
               <div className="coding-icon">

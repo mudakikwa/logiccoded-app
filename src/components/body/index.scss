@@ -6,6 +6,31 @@
   background: rgba(82, 87, 82, 0.1);
   padding-top: (29px / $divider);
   padding-left: (42px / $divider);
+  .code-indicator {
+    max-height: calc(100vh - 141px);
+    overflow-y: scroll;
+    padding-right: (32.5px/$divider)!important;
+    /* width */
+    &::-webkit-scrollbar {
+      width: (6px/$divider);
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: rgba(82, 87, 82, 0);
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #262926;
+      border-radius: 100px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #d2ded2;
+    }
+  }
   h4 {
     font-family: $graphik-light;
     font-weight: 300;
