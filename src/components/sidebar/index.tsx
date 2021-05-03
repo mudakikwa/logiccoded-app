@@ -176,7 +176,7 @@ export default function SideBar() {
           </svg>
         </div>
       </div>
-      <div>
+      <div className="user">
         <div className="row">
           <h6 className="px-0 mx-0">Nikita Belov</h6>
         </div>
