@@ -1,11 +1,21 @@
-@import "../sass/variables.scss";
+@import '../sass/variables.scss';
 #header {
   padding-top: 23.25px;
   padding-left: $header-padding;
   padding-right: $header-padding;
   margin-bottom: 23.25px;
-  img {
+  svg {
     height: 22.5px;
     width: auto;
+    transition: all 0.3s ease-out;
+    path {
+      stroke: '#D2DED2';
+      transition: all 0.3s ease-out;
+    }
+    &:hover {
+      path {
+        stroke: $violet;
+      }
+    }
   }
 }

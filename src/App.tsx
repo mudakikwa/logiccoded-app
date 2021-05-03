@@ -5,6 +5,10 @@ import HomePage from "./pages/home/index"
 import './App.global.scss';
 
 const Hello = () => {
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+
+  }
   return (
     <div>
       <div className="container Hello">
