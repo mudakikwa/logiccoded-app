@@ -18,7 +18,48 @@
       color: $white;
       text-transform: uppercase;
     }
-    .sign-up {
+  }
+  .sign-up {
+    h1 {
+      font-family: $graphik-light;
+      font-weight: 300;
+      font-size: (30px / $divider);
+      line-height: 1;
+      text-align: left;
+      color: $white;
+      margin-bottom: (26px / $divider);
+    }
+    h6 {
+      font-family: $graphik-light;
+      font-weight: 300;
+      font-size: (18px / $divider);
+      line-height: (30px / $divider);
+      text-align: left;
+      color: $white;
+      opacity: 0.31;
+      margin-bottom: (41px / $divider);
+    }
+    svg {
+      width: (34.31px/$divider);
+    }
+    .sign-up-btn {
+      height: (60px / $divider);
+      border-radius: (9px / $divider);
+      background: $violet;
+      border-color: $violet;
+      display: grid;
+      place-items: center;
+      span{
+        align-self:center;
+        justify-self: center;
+        &:last-child{
+          display: none;
+        }
+      }
+      &:hover {
+        background: lighten($color: $violet, $amount: 6);
+        border-color: lighten($color: $violet, $amount: 6);
+      }
     }
   }
 }
