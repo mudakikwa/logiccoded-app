@@ -1,11 +1,20 @@
 import React from 'react';
+import '@lottiefiles/lottie-player';
 
 export default function SignUp() {
   return (
     <div className="container-fluid" id="signup">
       <div className="row">
-        <div className="col-md-5 onboard">
-          <div className="row">
+        <div className="col-md-5 ">
+          <lottie-player
+            autoplay
+            controls
+            loop
+            mode="normal"
+            src="https://assets2.lottiefiles.com/packages/lf20_g0zfud2s.json"
+            style={({ width: '100%' }, { height: '100vh' })}
+          ></lottie-player>
+          <div className="row onboard">
             <div className="col-md-10">
               <h6 className="onboard-title">
                 Welcome to Smart Coded a platform to assist developers in coding
