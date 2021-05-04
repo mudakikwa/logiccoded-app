@@ -2,24 +2,29 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
-@import "~bootstrap";
-@import "./components/fonts/font.scss";
-@import "./components/sass/variables.scss";
-@import "./components/header/index.scss";
-@import "./components/sidebar/index.scss";
-@import "./components/body/index.scss";
-@import "./components/body/quickFeutures/index.scss";
+@import '~bootstrap';
+@import './components/fonts/font.scss';
+@import './components/sass/variables.scss';
+@import './components/header/index.scss';
+@import './components/sidebar/index.scss';
+@import './components/body/index.scss';
+@import './components/body/quickFeutures/index.scss';
+@import './components/signup/index.scss';
 .App {
   width: 100vw;
   height: 100vh;
   background: #121312;
-  padding-top:(31px/$divider);
-  padding-left:(50px/$divider);
-  padding-right:(50px/$divider);
+  padding-top: (31px / $divider);
+  padding-left: (50px / $divider);
+  padding-right: (50px / $divider);
 }
-#root{
+#root {
   background-color: #121312;
 }
-body{
-  background-color:#121312;
+body {
+  background-color: #121312;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }

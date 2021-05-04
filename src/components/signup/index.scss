@@ -1,0 +1,24 @@
+@import '../sass/variables.scss';
+#signup {
+  .onboard {
+    padding-left: (33px / $divider);
+    padding-top: (63px / $divider);
+    background-image: url('https://cdn.dribbble.com/users/408980/screenshots/5628115/screenshot_2018-11-30_at_19.22.23.png');
+    background-color: rgba(16, 17, 18, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    .onboard-title {
+      font-family: $graphik-light;
+      font-weight: 300;
+      font-size: (37px / $divider);
+      line-height: (48px / $divider);
+      text-align: left;
+      color: $white;
+      text-transform: uppercase;
+    }
+    .sign-up {
+    }
+  }
+}
