@@ -20,6 +20,9 @@
     }
   }
   .sign-up {
+    display: grid;
+    width:100%;
+    place-items: center;
     h1 {
       font-family: $graphik-light;
       font-weight: 300;
@@ -40,7 +43,7 @@
       margin-bottom: (41px / $divider);
     }
     svg {
-      width: (34.31px/$divider);
+      width: (34.31px / $divider);
     }
     .sign-up-btn {
       height: (60px / $divider);
@@ -49,16 +52,110 @@
       border-color: $violet;
       display: grid;
       place-items: center;
-      span{
-        align-self:center;
+      span {
+        align-self: center;
         justify-self: center;
-        &:last-child{
-          display: none;
+        &:last-child {
+          opacity: 0;
         }
       }
       &:hover {
         background: lighten($color: $violet, $amount: 6);
         border-color: lighten($color: $violet, $amount: 6);
+      }
+    }
+    .other-social {
+      display: flex;
+      flex-direction: row;
+      .btn-of-social {
+        transition: all 0.3s ease-out;
+        display: flex;
+        width: (60px / $divider);
+        height: (60px / $divider);
+        border-radius: (9px / $divider);
+        background: #1f211f;
+        display: grid;
+        place-items: center;
+        margin-right: 30px;
+        margin-bottom: (37.5px / $divider);
+        svg {
+          display: flex;
+          width: (36px / $divider);
+        }
+        &:hover {
+          background: $violet;
+        }
+      }
+    }
+    .separator {
+      margin-bottom: (50.8px / $divider);
+      svg {
+        width: 100%;
+      }
+    }
+    .forms {
+      .label {
+        font-family: $graphik-medium;
+        font-weight: 500;
+        font-size: (20px / $divider);
+        line-height: (30px / $divider);
+        text-align: left;
+        color: $white;
+        margin-bottom: (15px / $divider);
+      }
+      .input-style {
+        width: 100%;
+        height: (60px / $divider);
+        border-radius: (9px / $divider);
+        background: #1f211f;
+        border: none;
+        padding-left: 15px;
+        font-family: $graphik-light;
+        color: $white;
+        margin-bottom: (30px / $divider);
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(113, 113, 255, 0.4);
+        }
+      }
+      .form-check-label {
+        font-family: $graphik-light;
+        font-weight: 300;
+        font-size: (20px / $divider);
+        line-height: (30px / $divider);
+        text-align: left;
+        color: $white;
+        margin-bottom: (30px / $divider);
+        a {
+          color: $violet;
+          text-decoration: none;
+        }
+      }
+      .create-btn {
+        width: 100%;
+        height: (60px / $divider);
+        border-radius: (9px / $divider);
+        background: $violet;
+        display: grid;
+        place-items: center;
+        border-color: $violet;
+        &:hover {
+          background: lighten($color: $violet, $amount: 6);
+          border-color: lighten($color: $violet, $amount: 6);
+        }
+      }
+      .login-btn {
+        width: 100%;
+        height: (60px/$divider);
+        border-radius: (9px/$divider);
+        background: transparent;
+        border: 2px solid $violet;
+        display: grid;
+        place-items: center;
+        &:hover {
+          background: lighten($color: $violet, $amount: 6);
+          border: 2px solid lighten($color: $violet, $amount: 6);
+        }
       }
     }
   }
