@@ -1,5 +1,6 @@
 import React from 'react';
 import '@lottiefiles/lottie-player';
+// import lottieFile from './60424-web-hosting.json';
 
 export default function SignUp() {
   return (
@@ -8,11 +9,11 @@ export default function SignUp() {
         <div className="col-md-5 ">
           <lottie-player
             autoplay
-            controls
             loop
             mode="normal"
             src="https://assets2.lottiefiles.com/packages/lf20_g0zfud2s.json"
-            style={({ width: '100%' }, { height: '100vh' })}
+            style={({ width: '100%' }, { height: '100vh' },{position:"absolute"})}
+            className="lottie"
           ></lottie-player>
           <div className="row onboard">
             <div className="col-md-10">

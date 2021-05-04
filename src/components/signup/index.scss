@@ -1,19 +1,18 @@
 @import '../sass/variables.scss';
 #signup {
 
-  iframe{
+  .lottie{
     width:100%;
     min-height:100vh;
     position: absolute;
     left:0;
     top:0;
+    display:none;
   }
   .onboard {
     padding-left: (33px / $divider);
     padding-top: (63px / $divider);
-    background-image: url('https://cdn.dribbble.com/users/408980/screenshots/5628115/screenshot_2018-11-30_at_19.22.23.png');
-    background-color: rgba(16, 17, 18, 0.5);
-    background-blend-mode: multiply;
+    background-color: lighten(rgba(16, 17, 18, 1),6);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
