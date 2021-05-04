@@ -2,7 +2,7 @@ import React from 'react';
 import '@lottiefiles/lottie-player';
 // import lottieFile from './60424-web-hosting.json';
 
-export default function SignUp() {
+export default function Login() {
   return (
     <div className="container-fluid" id="signup">
       <div className="row">
@@ -11,8 +11,10 @@ export default function SignUp() {
             autoplay
             loop
             mode="normal"
-            src="https://assets2.lottiefiles.com/packages/lf20_g0zfud2s.json"
-            style={({ width: '100%' }, { height: '100vh' },{position:"absolute"})}
+            src="https://assets4.lottiefiles.com/packages/lf20_pqdnvhfb.json"
+            style={
+              ({ width: '100%' }, { height: '100vh' }, { position: 'absolute' })
+            }
             className="lottie"
           ></lottie-player>
           <div className="row onboard">
@@ -26,7 +28,7 @@ export default function SignUp() {
         <div className="col-md-7 justify-content-center">
           <div className="row  sign-up">
             <div className="col-md-8">
-              <h1>Sign Up</h1>
+              <h1>Log In Account</h1>
               <h6>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore.
@@ -48,7 +50,7 @@ export default function SignUp() {
                         fill="#d2ded2"
                       />
                     </svg>
-                    <span>Signup with google</span>
+                    <span>Login with google</span>
                     <span>i</span>
                   </div>
                 </div>
@@ -129,28 +131,12 @@ export default function SignUp() {
                   </svg>
                 </div>
                 <div className="col-md-12 row forms">
-                  <div className="col-md-6">
-                    <div className="label">Full Name</div>
-                    <input type="text" className="input-style" />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="label">Username</div>
-                    <input type="text" className="input-style" />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="label">Email Address</div>
-                    <input type="text" className="input-style" />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="label">Comfirm Email Address</div>
-                    <input type="text" className="input-style" />
-                  </div>
-                  <div className="col-md-6">
+                  <div className="col-md-12">
                     <div className="label">Password</div>
                     <input type="text" className="input-style" />
                   </div>
-                  <div className="col-md-6">
-                    <div className="label">Comfirm Password</div>
+                  <div className="col-md-12">
+                    <div className="label">Password</div>
                     <input type="text" className="input-style" />
                   </div>
                   <div className="col-md-12">
@@ -173,12 +159,12 @@ export default function SignUp() {
                   </div>
                   <div className="col-md-6">
                     <div className="btn btn-primary create-btn">
-                      Create An Account
+                      Log In Account
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="btn btn-outline btn-primary login-btn">
-                      Log In Account
+                      Create Account
                     </div>
                   </div>
                 </div>
