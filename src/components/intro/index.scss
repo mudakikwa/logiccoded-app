@@ -1,0 +1,18 @@
+@import "../sass/variables.scss";
+#intro {
+  min-width:100vw;
+  min-height:100vh;
+  display:grid;
+  place-items: center;
+  h1 {
+    font-family:$graphik-semi-bold;
+    font-weight: 600;
+    font-size: (97px/$divider);
+    line-height: (97px/$divider);
+    text-align: left;
+    color: $white;
+    span{
+      color:$violet;
+    }
+  }
+}
