@@ -13,8 +13,8 @@ export default function SignUp() {
             </div>
           </div>
         </div>
-        <div className="col-md-7 justify-content-center sign-up">
-          <div className="row">
+        <div className="col-md-7 justify-content-center">
+          <div className="row  sign-up">
             <div className="col-md-8">
               <h1>Sign Up</h1>
               <h6>
@@ -127,15 +127,19 @@ export default function SignUp() {
                     <div className="label">Username</div>
                     <input type="text" className="input-style" />
                   </div>
-                  <div className="col-md-12">
+                  <div className="col-md-6">
                     <div className="label">Email Address</div>
                     <input type="text" className="input-style" />
                   </div>
-                  <div className="col-md-12">
+                  <div className="col-md-6">
+                    <div className="label">Comfirm Email Address</div>
+                    <input type="text" className="input-style" />
+                  </div>
+                  <div className="col-md-6">
                     <div className="label">Password</div>
                     <input type="text" className="input-style" />
                   </div>
-                  <div className="col-md-12">
+                  <div className="col-md-6">
                     <div className="label">Comfirm Password</div>
                     <input type="text" className="input-style" />
                   </div>
@@ -158,7 +162,9 @@ export default function SignUp() {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="btn btn-primary create-btn">Create An Account</div>
+                    <div className="btn btn-primary create-btn">
+                      Create An Account
+                    </div>
                   </div>
                   <div className="col-md-6">
                     <div className="btn btn-outline btn-primary login-btn">

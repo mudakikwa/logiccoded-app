@@ -21,6 +21,7 @@
   }
   .sign-up {
     display: grid;
+    min-height: 100vh;
     width:100%;
     place-items: center;
     h1 {
