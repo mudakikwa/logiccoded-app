@@ -12,8 +12,8 @@ export default function App() {
       <Switch>
         <Route path="/home" component={HomePage} />
         <Route path="/sign-up" component={SignUpPage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/" component={IntroPage} />
+        <Route path="/" component={LoginPage} />
+        {/* <Route path="/" component={IntroPage} /> */}
       </Switch>
     </Router>
   );

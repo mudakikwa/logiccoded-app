@@ -4,15 +4,22 @@
   min-height:100vh;
   display:grid;
   place-items: center;
-  h1 {
-    font-family:$graphik-semi-bold;
-    font-weight: 600;
-    font-size: (97px/$divider);
-    line-height: (97px/$divider);
-    text-align: left;
-    color: $white;
-    span{
-      color:$violet;
-    }
-  }
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
 }
