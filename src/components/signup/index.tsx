@@ -1,20 +1,12 @@
 import React from 'react';
-import '@lottiefiles/lottie-player';
-// import lottieFile from './60424-web-hosting.json';
+import LottieWrapper from "./lottie"
 
 export default function SignUp() {
   return (
     <div className="container-fluid" id="signup">
       <div className="row">
         <div className="col-md-5 ">
-          <lottie-player
-            autoplay
-            loop
-            mode="normal"
-            src="https://assets2.lottiefiles.com/packages/lf20_g0zfud2s.json"
-            style={({ width: '100%' }, { height: '100vh' },{position:"absolute"})}
-            className="lottie"
-          ></lottie-player>
+          <LottieWrapper />
           <div className="row onboard">
             <div className="col-md-10">
               <h6 className="onboard-title">

@@ -10,7 +10,7 @@ const LottieWrapper = () => {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'https://assets2.lottiefiles.com/packages/lf20_g0zfud2s.json',
+      path: 'https://assets1.lottiefiles.com/packages/lf20_pyawb2b1.json',
     });
     return () => anim.destroy(); // optional clean up for unmounting
   }, [animationContainer]);

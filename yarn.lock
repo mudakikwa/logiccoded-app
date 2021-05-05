@@ -3190,12 +3190,7 @@ caniuse-db@^1.0.30001090:
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30001159.tgz#1983075ffa39c1d96b9e078731215f1fed850bb4"
   integrity sha512-fh0J2qYeW36hS5RUT7FnHcvgUxATY5LtzSXURWPuLNAolWaXR+qSu+asX5xcFvC4fwQKzfHWtWuPGJc0VJYrfw==
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001157:
-  version "1.0.30001222"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001222.tgz"
-  integrity sha512-rPmwUK0YMjfMlZVmH6nVB5U3YJ5Wnx3vmT5lnRO3nIKO8bJ+TRWMbGuuiSugDJqESy/lz+1hSrlQEagCtoOAWQ==
-
-caniuse-lite@^1.0.30001222:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001157, caniuse-lite@^1.0.30001222:
   version "1.0.30001222"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001222.tgz#2789b8487282cbbe1700924f53951303d28086a9"
   integrity sha512-rPmwUK0YMjfMlZVmH6nVB5U3YJ5Wnx3vmT5lnRO3nIKO8bJ+TRWMbGuuiSugDJqESy/lz+1hSrlQEagCtoOAWQ==
@@ -7822,6 +7817,11 @@ loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3.1, loose-envify@^1.4
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+lottie-web@^5.7.8:
+  version "5.7.8"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.7.8.tgz#c7a2e42983bcb42093590a03ccdde8741d3f960e"
+  integrity sha512-VxKCZk33GwZac6mVHvT3grUFR/zrMsW85M7vxQPrgpJOP2IhcnjMbuD0h7muBkXgw84K9KmGulmcyzvhpzSMAg==
 
 loud-rejection@^1.0.0:
   version "1.6.0"
