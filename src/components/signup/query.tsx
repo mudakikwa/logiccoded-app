@@ -1,5 +1,6 @@
 // eslint-disable-next-line import/prefer-default-export
 export const MUTATION = `mutation(
+    $fullname:String!
     $username: String!
     $email: String!
     $password: String!
@@ -7,6 +8,7 @@ export const MUTATION = `mutation(
   ) {
     SignUp(
       signUpData: {
+        fullname:$fullname
         username: $username
         email: $email
         password: $password

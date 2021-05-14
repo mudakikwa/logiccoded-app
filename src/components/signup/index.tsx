@@ -2,18 +2,21 @@ import React, { useState } from 'react';
 import LottieWrapper from './lottie';
 import { queryData } from '../../helper/graphqlSender';
 import { MUTATION } from './query';
-import InfoComponent from './src/InfoComponent';
+import Loader from './src/icons/loader';
 import CloudErrorComponent from './src/CloudErrorComponent';
+import { useHistory } from 'react-router-dom';
 
 export default function SignUp() {
   const [error, seterror] = useState(null);
   const [loading, setloading] = useState(null);
+  const history = useHistory();
   const value = (id) => {
     return document.getElementById(id).value;
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
     setloading(true);
+    seterror(false);
     const [
       fullName,
       username,
@@ -27,25 +30,37 @@ export default function SignUp() {
       value('emailAdress'),
       value('comfirmEmail'),
       value('password'),
-      value('comfirmPassword'),
+      value('comfirmPassword')
     ];
 
     let variables = {
-      username: 'hulio fred',
-      email: 'testyiu@gmail.com',
-      password: '123456',
-      comfirmPassword: '123456',
+      fullname: fullName,
+      username: username,
+      email: email,
+      password: password,
+      comfirmPassword: comfirmPassword,
     };
     if (email !== comfirmEmail) {
+      setloading(false);
       seterror("Email address don't match");
     }
     if (password !== comfirmPassword) {
+      setloading(false);
       seterror("password don't match");
+    }
+    let checked=document.getElementById('flexCheckDefault').checked;
+    if (!checked) {
+      setloading(false);
+      seterror('Accept term and condition to get started');
     } else {
       const response = await queryData(MUTATION, variables);
+      setloading(false);
       const { data, error: errorMsg } = response;
-      if (errorMsg||data) {
-        setloading(false);
+      if (errorMsg) {
+        seterror(errorMsg);
+      }
+      if (data) {
+        history.push('/home');
       }
     }
   };
@@ -174,10 +189,10 @@ export default function SignUp() {
                       <div className="col-md-12">
                         <div className="btn-loading">
                           <div className="col-md-1">
-                            <InfoComponent />
+                            <Loader />
                           </div>
                           <div className="col-md-10 text">
-                            <div>hello world </div>
+                            <div>Loading </div>
                           </div>
                         </div>
                       </div>
@@ -213,15 +228,17 @@ export default function SignUp() {
                     <div className="col-md-6">
                       <div className="label">Email Address</div>
                       <input
-                        type="text"
+                        type="email"
                         className="input-style"
                         id="emailAdress"
+                        required
                       />
                     </div>
                     <div className="col-md-6">
                       <div className="label">Comfirm Email Address</div>
                       <input
-                        type="text"
+                        type="email"
+                        required
                         className="input-style"
                         id="comfirmEmail"
                       />
@@ -229,17 +246,19 @@ export default function SignUp() {
                     <div className="col-md-6">
                       <div className="label">Password</div>
                       <input
-                        type="text"
+                        type="password"
                         className="input-style"
                         id="password"
+                        required
                       />
                     </div>
                     <div className="col-md-6">
                       <div className="label">Comfirm Password</div>
                       <input
-                        type="text"
+                        type="password"
                         className="input-style"
                         id="comfirmPassword"
+                        required
                       />
                     </div>
                     <div className="col-md-12">
@@ -247,7 +266,6 @@ export default function SignUp() {
                         <input
                           className="form-check-input"
                           type="checkbox"
-                          value=""
                           id="flexCheckDefault"
                         />
                         <label
