@@ -1,17 +1,13 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React,{} from 'react';
 import LottieWrapper from "./lottie"
-import lottieFile from './60424-web-hosting.json';
 
 export default function Login() {
   return (
     <div className="container-fluid" id="signup">
       <div className="row">
         <div className="col-md-5 ">
-          <LottieWrapper
-            style={
-              ({ position: 'absolute' }, { width: '100%' }, { height: '100vh' })
-            }
-          />
+          <LottieWrapper />
           <div className="row onboard">
             <div className="col-md-10">
               <h6 className="onboard-title">
@@ -147,13 +143,14 @@ export default function Login() {
                         htmlFor="flexCheckDefault"
                       >
                         By creating an account it mean you are okay with{' '}
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a href="">our privacy policy</a> and our default
                         <a href=""> notification settings</a>
                       </label>
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="btn btn-primary create-btn">
+                    <div className="btn btn-primary create-btn" type="submit">
                       Log In Account
                     </div>
                   </div>
