@@ -77,7 +77,7 @@ export default function SideBar() {
             </g>
           </svg>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="34.333"
@@ -95,7 +95,7 @@ export default function SideBar() {
               strokeWidth="2"
             />
           </svg>
-        </div>
+        </div> */}
         <div className="row">
           <svg
             xmlns="http://www.w3.org/2000/svg"

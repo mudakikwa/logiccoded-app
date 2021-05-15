@@ -2,6 +2,7 @@ import React from 'react';
 
 import './index.scss';
 
+import { Link } from 'react-router-dom';
 import Logo from './src/logo.svg';
 
 export default function Header() {
@@ -57,49 +58,37 @@ export default function Header() {
               </svg>
             </div>
             <div className="col-md-4 d-flex justify-content-end px-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="31.205"
-                height="31.22"
-                viewBox="0 0 31.205 31.22"
-              >
-                <g
-                  id="Icon_feather-feather"
-                  data-name="Icon feather-feather"
-                  transform="translate(-2.293 -2.487)"
+              <Link to="/login">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="22"
+                  viewBox="0 0 20 22"
                 >
-                  <path
-                    id="Path_7"
-                    data-name="Path 7"
-                    d="M30.36,18.36A9.005,9.005,0,1,0,17.625,5.625L7.5,15.75V28.5H20.25Z"
-                    fill="none"
-                    stroke="#D2DED2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  />
-                  <path
-                    id="Path_8"
-                    data-name="Path 8"
-                    d="M24,12,3,33"
-                    fill="none"
-                    stroke="#D2DED2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  />
-                  <path
-                    id="Path_9"
-                    data-name="Path 9"
-                    d="M26.25,22.5H13.5"
-                    fill="none"
-                    stroke="#D2DED2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  />
-                </g>
-              </svg>
+                  <g id="lock" transform="translate(-2 -1)">
+                    <path
+                      id="Path_118"
+                      data-name="Path 118"
+                      d="M2,0H16a2,2,0,0,1,2,2V9a2,2,0,0,1-2,2H2A2,2,0,0,1,0,9V2A2,2,0,0,1,2,0Z"
+                      transform="translate(3 11)"
+                      fill="none"
+                      stroke="#d2ded2"
+                      strokeLinecap="round"
+                      strokeWidth="2"
+                    />
+                    <path
+                      id="Path_117"
+                      data-name="Path 117"
+                      d="M7,11V7A5,5,0,0,1,17,7v4"
+                      fill="none"
+                      stroke="#d2ded2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    />
+                  </g>
+                </svg>
+              </Link>
             </div>
             <div className="col-md-4 d-flex justify-content-end px-0">
               <svg

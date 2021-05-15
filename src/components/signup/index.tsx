@@ -10,6 +10,7 @@ export default function SignUp() {
   const [error, seterror] = useState(null);
   const [loading, setloading] = useState(null);
   const history = useHistory();
+  const [historyData, sethistoryData] = useState(history);
   const value = (id) => {
     return document.getElementById(id).value;
   };
@@ -30,7 +31,7 @@ export default function SignUp() {
       value('emailAdress'),
       value('comfirmEmail'),
       value('password'),
-      value('comfirmPassword')
+      value('comfirmPassword'),
     ];
 
     let variables = {
@@ -48,7 +49,7 @@ export default function SignUp() {
       setloading(false);
       seterror("password don't match");
     }
-    let checked=document.getElementById('flexCheckDefault').checked;
+    let checked = document.getElementById('flexCheckDefault').checked;
     if (!checked) {
       setloading(false);
       seterror('Accept term and condition to get started');
@@ -63,6 +64,10 @@ export default function SignUp() {
         history.push('/home');
       }
     }
+  };
+  const handleClick = (e) => {
+    e.preventDefault();
+    history.push('/login');
   };
   return (
     <div className="container-fluid" id="signup">
@@ -287,7 +292,10 @@ export default function SignUp() {
                       </button>
                     </div>
                     <div className="col-md-6">
-                      <div className="btn btn-outline btn-primary login-btn">
+                      <div
+                        className="btn btn-outline btn-primary login-btn"
+                        onClick={handleClick}
+                      >
                         Log In Account
                       </div>
                     </div>
