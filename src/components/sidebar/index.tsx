@@ -99,59 +99,31 @@ export default function SideBar() {
         <div className="row">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="35.396"
-            height="31"
-            viewBox="0 0 35.396 31"
+            width="32.414"
+            height="32.414"
+            viewBox="0 0 32.414 32.414"
           >
-            <path
-              id="heart"
-              d="M33.292,5.65a9.05,9.05,0,0,0-12.8,0L18.746,7.395,17,5.65a9.052,9.052,0,0,0-12.8,12.8L5.944,20.2,18.746,33l12.8-12.8,1.744-1.744a9.05,9.05,0,0,0,0-12.8Z"
-              transform="translate(-1.049 -2.498)"
-              fill="none"
-              stroke="#D2DED2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            />
-          </svg>
-        </div>
-        <div className="row">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-          >
-            <g id="plus-circle" transform="translate(-1 -1)">
+            <g id="send" transform="translate(-1 -55.586)">
               <path
-                id="Path_69"
-                data-name="Path 69"
-                d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z"
-                transform="translate(2 2)"
+                id="Path_119"
+                data-name="Path 119"
+                d="M16.5,0,0,16.5"
+                transform="translate(15.5 57)"
                 fill="none"
                 stroke="#d2ded2"
-                strokeLinecap="round"
-                strokeWidth="2"
+                stroke-linecap="round"
+                stroke-width="2"
               />
               <path
-                id="Path_71"
-                data-name="Path 71"
-                d="M0,0V8"
-                transform="translate(17 13)"
+                id="Path_12"
+                data-name="Path 12"
+                d="M32,2,21.5,32l-6-13.5L2,12.5Z"
+                transform="translate(0 55)"
                 fill="none"
                 stroke="#d2ded2"
-                strokeLinecap="round"
-                strokeWidth="2"
-              />
-              <path
-                id="Path_70"
-                data-name="Path 70"
-                d="M0,0H8"
-                transform="translate(13 17)"
-                fill="none"
-                stroke="#d2ded2"
-                strokeLinecap="round"
-                strokeWidth="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
               />
             </g>
           </svg>
