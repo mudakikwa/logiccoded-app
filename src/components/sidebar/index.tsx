@@ -1,16 +1,26 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addFolder } from '../../redux/appData';
 
 import './index.scss';
 
-import Activity from './src/activity.svg';
-import Cloud from './src/cloud.svg';
-import Grid from './src/grid.svg';
-import Heart from './src/heart.svg';
-import PlusCircle from './src/plus-circle.svg';
-import Send from './src/send.svg';
 import ProfileImg from './src/profile.jpg';
 
 export default function SideBar() {
+  const { folder } = useSelector((state) => state.appData);
+  const dispatch = useDispatch();
+  const handleAddFile = async () => {
+    const dialog = require('electron').remote.dialog;
+    const file = await dialog.showOpenDialog({
+      title: 'Choose Folder',
+      properties: ['openDirectory'],
+    });
+    if (file) {
+      // console.log(file.filePaths);
+      dispatch(addFolder(file.filePaths));
+      console.log(folder);
+    }
+  };
   return (
     <div className="col-md-1" id="sidebar">
       <div>
@@ -20,6 +30,7 @@ export default function SideBar() {
             width="32"
             height="32"
             viewBox="0 0 32 32"
+            onClick={handleAddFile}
           >
             <g id="plus-circle" transform="translate(-1 -1)">
               <path
@@ -111,8 +122,8 @@ export default function SideBar() {
                 transform="translate(15.5 57)"
                 fill="none"
                 stroke="#d2ded2"
-                stroke-linecap="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeWidth="2"
               />
               <path
                 id="Path_12"
@@ -121,9 +132,9 @@ export default function SideBar() {
                 transform="translate(0 55)"
                 fill="none"
                 stroke="#d2ded2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
               />
             </g>
           </svg>
