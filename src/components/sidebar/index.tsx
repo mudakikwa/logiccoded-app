@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addFolder } from '../../redux/appData';
+import { showFeedBack } from '../../redux/panelStates';
 
 import './index.scss';
 
@@ -8,9 +9,10 @@ import ProfileImg from './src/profile.jpg';
 
 export default function SideBar() {
   const { folder } = useSelector((state) => state.appData);
+  const { feedBack } = useSelector((state) => state.panelData);
   const dispatch = useDispatch();
   const handleAddFile = async () => {
-    const dialog = require('electron').remote.dialog;
+    const { dialog } = require('electron').remote;
     const file = await dialog.showOpenDialog({
       title: 'Choose Folder',
       properties: ['openDirectory'],
@@ -113,6 +115,10 @@ export default function SideBar() {
             width="32.414"
             height="32.414"
             viewBox="0 0 32.414 32.414"
+            onClick={(e) => {
+              e.preventDefault();
+              dispatch(showFeedBack());
+            }}
           >
             <g id="send" transform="translate(-1 -55.586)">
               <path

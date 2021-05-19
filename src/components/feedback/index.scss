@@ -1,0 +1,132 @@
+@import '../sass/variables.scss';
+#feedback {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba($color: #121312, $alpha: 0.76);
+  display: grid;
+  place-items: center;
+  .panel {
+    width: 40vw;
+    border-radius: 9px / $divider;
+    background: #1f211f;
+    overflow-y: hidden;
+    background-image: url('./components/feedback/src/Mask\ Group\ 2.svg');
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    background-position: top right;
+    .close {
+      float: right;
+      opacity: 1;
+      svg {
+        width: (18px/$divider);
+        background: transparent;
+      }
+    }
+    .title {
+      h3 {
+        font-family: $graphik-medium;
+        font-weight: normal;
+        font-size: (28px / $divider);
+        line-height: 1;
+        text-align: left;
+        color: $white;
+        margin-bottom: (18px / $divider);
+      }
+      h6 {
+        font-family: $graphik-light;
+        font-weight: normal;
+        font-size: (18px / $divider);
+        line-height: (23.4px / $divider);
+        text-align: left;
+        color: $white;
+        opacity: 0.61;
+        margin-bottom: (33px / $divider);
+      }
+    }
+    .form {
+      textarea {
+        width: 100%;
+        border-radius: (9px / $divider);
+        background: (#2e302e);
+        border-color: none;
+        border: none;
+        outline: none;
+        padding-top: (24px / $divider);
+        padding-bottom: (24px / $divider);
+        padding-left: (29px / $divider);
+        padding-right: (29px / $divider);
+        transition: all 0.3s ease-out;
+        margin-bottom: (25px / $divider);
+        font-family: $graphik-light;
+        font-weight: normal;
+        font-size: (23px / $divider);
+        line-height: (23.4px / $divider);
+        text-align: left;
+        color: rgba($color: $white, $alpha: 0.51);
+        textarea::placeholder {
+          font-family: $graphik-light;
+          font-weight: normal;
+          font-size: (23px / $divider);
+          line-height: (23.4px / $divider);
+          text-align: left;
+          color: rgba($color: $white, $alpha: 0.51);
+        }
+        &:focus {
+          box-shadow: 0 0 0 3px rgba(113, 113, 255, 0.4);
+          background: lighten($color: #2e302e, $amount: 6);
+        }
+        &:hover {
+          background: lighten($color: #2e302e, $amount: 6);
+        }
+      }
+    }
+    .buttons {
+      .btn-primary {
+        width: 45%;
+        height: (60px / $divider);
+        border-radius: (9px / $divider);
+        background: $violet;
+        display: grid;
+        place-items: center;
+        border-color: $violet;
+        &:hover {
+          background: lighten($color: $violet, $amount: 6);
+          border-color: lighten($color: $violet, $amount: 6);
+        }
+      }
+      .btn-outline-primary {
+        width: 45%;
+        height: (60px / $divider);
+        border-radius: (9px / $divider);
+        background: transparent;
+        border: 2px solid $violet;
+        display: grid;
+        place-items: center;
+        color: $white;
+        &:hover {
+          background: lighten($color: $violet, $amount: 6);
+          border: 2px solid lighten($color: $violet, $amount: 6);
+        }
+      }
+      .separator {
+        font-family: $graphik-light;
+        font-weight: normal;
+        font-size: (23px / $divider);
+        line-height: (23.4px / $divider);
+        text-align: left;
+        color: $white;
+        align-self: center;
+      }
+    }
+  }
+}
