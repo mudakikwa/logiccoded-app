@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addFolder } from '../../redux/appData';
 import { showFeedBack } from '../../redux/panelStates';
+
+import { watcher } from './helper/fileWatch';
 
 import './index.scss';
 
@@ -23,6 +25,15 @@ export default function SideBar() {
       console.log(folder);
     }
   };
+  useEffect(() => {
+    if (folder) {
+      // console.log(folder[0]);
+      watcher(folder[0]);
+    }
+    // return () => {
+    //   cleanup
+    // }
+  }, [folder]);
   return (
     <div className="col-md-1" id="sidebar">
       <div>

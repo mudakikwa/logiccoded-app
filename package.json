@@ -3,8 +3,8 @@
   "productName": "ElectronReact",
   "description": "Electron application boilerplate based on React, React Router, Webpack, React Fast Refresh for rapid application development",
   "scripts": {
-    "build": "concurrently \"yarn build:main\" \"yarn build:renderer\"",
     "build:main": "cross-env NODE_ENV=production webpack --config ./.erb/configs/webpack.config.main.prod.babel.js",
+    "build": "concurrently \"yarn build:main\" \"yarn build:renderer\"",
     "build:renderer": "cross-env NODE_ENV=production webpack --config ./.erb/configs/webpack.config.renderer.prod.babel.js",
     "rebuild": "electron-rebuild --parallel --types prod,dev,optional --module-dir src",
     "lint": "cross-env NODE_ENV=development eslint . --cache --ext .js,.jsx,.ts,.tsx",
@@ -261,6 +261,7 @@
     "graphql": "^15.5.0",
     "graphql-tag": "^2.12.4",
     "history": "^5.0.0",
+    "line-reader": "^0.4.0",
     "lottie-web": "^5.7.8",
     "react": "^17.0.1",
     "react-animejs": "^0.5.6",
