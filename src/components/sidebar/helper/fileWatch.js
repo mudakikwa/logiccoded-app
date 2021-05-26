@@ -3,6 +3,7 @@
 /* eslint-disable import/prefer-default-export */
 const chokidar = require('chokidar');
 const lineReader = require('line-reader');
+const replace = require('replace-in-file');
 
 const fs = window.require('fs');
 
@@ -11,15 +12,20 @@ const file = [];
 export const watcher = (folder) => {
   chokidar.watch(folder).on('all', (event, path) => {
     if (event === 'change') {
-      lineReader.eachLine(path, (line) => {
-        console.log(line);
-        file.push(line);
+      lineReader.eachLine(path, async (line) => {
         if (line.includes('##')) {
-          const position = line.indexOf('##');
-          if (position === 0) {
-            const newLine = line.substr(2);
-            file.push(newLine);
-          }
+          const options = {
+            files: path,
+            from: line,
+            to: 'amakuru',
+          };
+          const results = await replace(options);
+          console.log('Replacement results:', results);
+          // const position = line.indexOf('##');
+          // if (position === 0) {
+          //   const newLine = line.substr(2);
+          //   file.push(newLine);
+          // }
         }
         console.log(file);
       });
