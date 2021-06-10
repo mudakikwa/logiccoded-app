@@ -11,6 +11,7 @@ const file = [];
 
 export const watcher = (folder) => {
   chokidar.watch(folder).on('all', (event, path) => {
+    console.log(`${file} have been ${event}`)
     if (event === 'change') {
       lineReader.eachLine(path, async (line) => {
         if (line.includes('##')) {

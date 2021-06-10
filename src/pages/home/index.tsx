@@ -7,10 +7,11 @@ import FeedBack from '../../components/feedback/index';
 import Rate from '../../components/rate/index';
 
 export default function HomePage() {
-  const { feedBack, rate } = useSelector((state) => state.panelData);
+  const { feedBack } = useSelector((state) => state.panelData);
+  const { rate } = useSelector((state) => state.panelData);
   return (
     <div>
-      {/* {rate && <Rate />} */}
+      {rate && <Rate />}
       {feedBack && <FeedBack />}
       <Header />
       <div className="container-fluid">

@@ -1,9 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { hideFeedBack } from '../../../redux/panelStates';
+import { hideRate } from '../../../redux/panelStates';
 
 export default function Close() {
-  const { feedBack } = useSelector((state) => state.panelData);
   const dispatch = useDispatch();
   return (
     <div>
@@ -14,7 +13,7 @@ export default function Close() {
         viewBox="0 0 20.828 20.828"
         onClick={(e) => {
           e.preventDefault();
-          dispatch(hideFeedBack());
+          dispatch(hideRate());
         }}
       >
         <g

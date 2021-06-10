@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addFolder } from '../../redux/appData';
-import { showFeedBack } from '../../redux/panelStates';
+import { showFeedBack, showRate } from '../../redux/panelStates';
 
 import { watcher } from './helper/fileWatch';
 
@@ -162,6 +162,10 @@ export default function SideBar() {
             width="35.396"
             height="31"
             viewBox="0 0 35.396 31"
+            onClick={(e) => {
+              e.preventDefault();
+              dispatch(showRate());
+            }}
           >
             <path
               id="heart"

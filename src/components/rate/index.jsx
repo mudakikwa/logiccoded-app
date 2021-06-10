@@ -24,22 +24,12 @@ export default function Rate() {
             If you have something interesting you can tell use please feel free
             to send feedback
           </h6>
-          <div className="icons row">
-            <div className="col-md">
-              <Love />
-            </div>
-            <div className="col-md">
-              <Happy />
-            </div>
-            <div className="col-md">
-              <Mean />
-            </div>
-            <div className="col-md">
-              <Sad />
-            </div>
-            <div className="col-md">
-              <VerySad />
-            </div>
+          <div className="icons row d-flex justify-content-between">
+            <Love />
+            <Happy />
+            <Mean />
+            <Sad />
+            <VerySad />
           </div>
         </div>
       </div>

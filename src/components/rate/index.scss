@@ -12,8 +12,12 @@
   background-color: rgba($color: #121312, $alpha: 0.76);
   display: grid;
   place-items: center;
+  .icons{
+    padding-right:(69px/$divider);
+  }
   svg {
     width: (104px/$divider);
+    padding-left: 15px;
   }
   .panel {
     width: 40vw;
@@ -31,7 +35,7 @@
       float: right;
       opacity: 1;
       svg {
-        width: (18px / $divider);
+        width: (40px / $divider);
         background: transparent;
       }
     }
@@ -56,80 +60,6 @@
         margin-bottom: (33px / $divider);
       }
     }
-    .form {
-      textarea {
-        width: 100%;
-        border-radius: (9px / $divider);
-        background: (#2e302e);
-        border-color: none;
-        border: none;
-        outline: none;
-        padding-top: (24px / $divider);
-        padding-bottom: (24px / $divider);
-        padding-left: (29px / $divider);
-        padding-right: (29px / $divider);
-        transition: all 0.3s ease-out;
-        margin-bottom: (25px / $divider);
-        font-family: $graphik-light;
-        font-weight: normal;
-        font-size: (23px / $divider);
-        line-height: (23.4px / $divider);
-        text-align: left;
-        color: rgba($color: $white, $alpha: 0.51);
-        textarea::placeholder {
-          font-family: $graphik-light;
-          font-weight: normal;
-          font-size: (23px / $divider);
-          line-height: (23.4px / $divider);
-          text-align: left;
-          color: rgba($color: $white, $alpha: 0.51);
-        }
-        &:focus {
-          box-shadow: 0 0 0 3px rgba(113, 113, 255, 0.4);
-          background: lighten($color: #2e302e, $amount: 6);
-        }
-        &:hover {
-          background: lighten($color: #2e302e, $amount: 6);
-        }
-      }
-    }
-    .buttons {
-      .btn-primary {
-        width: 45%;
-        height: (60px / $divider);
-        border-radius: (9px / $divider);
-        background: $violet;
-        display: grid;
-        place-items: center;
-        border-color: $violet;
-        &:hover {
-          background: lighten($color: $violet, $amount: 6);
-          border-color: lighten($color: $violet, $amount: 6);
-        }
-      }
-      .btn-outline-primary {
-        width: 45%;
-        height: (60px / $divider);
-        border-radius: (9px / $divider);
-        background: transparent;
-        border: 2px solid $violet;
-        display: grid;
-        place-items: center;
-        color: $white;
-        &:hover {
-          background: lighten($color: $violet, $amount: 6);
-          border: 2px solid lighten($color: $violet, $amount: 6);
-        }
-      }
-      .separator {
-        font-family: $graphik-light;
-        font-weight: normal;
-        font-size: (23px / $divider);
-        line-height: (23.4px / $divider);
-        text-align: left;
-        color: $white;
-        align-self: center;
-      }
-    }
+
   }
 }
