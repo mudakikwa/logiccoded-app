@@ -1,29 +1,31 @@
 @import '../sass/variables.scss';
-#signup {
-  .btn-loading,.btn-error {
-    background-color: #7171ff;
-    height: (60px / $divider);
-    color: $white;
-    font-weight: 300;
-    font-size: (18px / $divider);
-    line-height: (30px / $divider);
-    text-align: left;
-    margin-bottom: (30px / $divider);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: (9px / $divider);
-    font-family: $graphik-medium;
-    font-weight: 500;
+.btn-loading,
+.btn-error {
+  background-color: #7171ff;
+  height: (60px / $divider);
+  color: $white;
+  font-weight: 300;
+  font-size: (18px / $divider);
+  line-height: (30px / $divider);
+  text-align: left;
+  margin-bottom: (30px / $divider);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: (9px / $divider);
+  font-family: $graphik-medium;
+  font-weight: 500;
 
-    .text {
-      display: grid;
-      place-items: center;
-    }
+  .text {
+    display: grid;
+    place-items: center;
   }
-  .btn-error{
-    background-color: #FF7171;
-  }
+}
+
+.btn-error {
+  background-color: #FF7171;
+}
+#signup {
   .onboard {
     padding-left: (33px / $divider);
     padding-top: (63px / $divider);

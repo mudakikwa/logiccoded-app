@@ -1,11 +1,28 @@
-import React from 'react';
-import Waves from './src/waves';
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useMutation, gql } from '@apollo/client';
 import Close from './src/close';
-import { useDispatch, useSelector } from 'react-redux';
 import { hideFeedBack } from '../../redux/panelStates';
+import Error from '../error/index';
 
 export default function FeedBack() {
-  const { feedBack } = useSelector((state) => state.panelData);
+  let input;
+  const ADD_FEEDBACK = gql`
+    mutation($userId: String!, $feedback: String!) {
+      AddFeedBack(feedBackData: { userId: $userId, feedback: $feedback }) {
+        _id
+        userId
+        feedback
+      }
+    }
+  `;
+  const [errorData, seterrorData] = useState(null);
+  const [AddFeedBack, { data, error }] = useMutation(ADD_FEEDBACK, {
+    errorPolicy: 'all',
+  });
+
   const dispatch = useDispatch();
   return (
     <div id="feedback">
@@ -20,28 +37,56 @@ export default function FeedBack() {
             to send feedback
           </h6>
         </div>
-        <div className="form">
+        {errorData && <Error error={errorData} />}
+        <form
+          className="form"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            try {
+              const addFeedBack = await AddFeedBack({
+                variables: {
+                  userId: 'testing hello',
+                  feedback: input.value,
+                },
+              });
+              if (addFeedBack) {
+                dispatch(hideFeedBack());
+              }
+            } catch (errorOccured) {
+              if (error) {
+                seterrorData(
+                  errorOccured.networkError.result.errors[0].message
+                );
+              }
+            }
+          }}
+        >
           <textarea
             name=""
             id=""
             cols="50"
             rows="10"
             placeholder="Type Something"
-          />
-        </div>
-        <div className="row col-md-12 d-flex justify-content-between buttons px-0 mx-0">
-          <div className="btn btn-primary">Send Feedback</div>
-          <div className="separator">Or</div>
-          <div
-            className="btn btn-outline-primary"
-            onClick={(e) => {
-              e.preventDefault();
-              dispatch(hideFeedBack());
+            ref={(node) => {
+              input = node;
             }}
-          >
-            Cancel Feed Back
+          />
+          <div className="row col-md-12 d-flex justify-content-between buttons px-0 mx-0">
+            <button className="btn btn-primary" type="submit">
+              Send Feedback
+            </button>
+            <div className="separator">Or</div>
+            <div
+              className="btn btn-outline-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                dispatch(hideFeedBack());
+              }}
+            >
+              Cancel Feed Back
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
