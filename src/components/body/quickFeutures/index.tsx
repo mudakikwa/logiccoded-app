@@ -18,7 +18,9 @@ export default function QuickFeutures() {
   const { data, loading, error } = useQuery(QUERY);
 
   useEffect(() => {
-    setad(data.AllAds[0].link);
+    if (data) {
+      setad(data.AllAds[0].link);
+    }
   }, []);
   return (
     <div id="quickFeutures">
