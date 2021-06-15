@@ -12,10 +12,10 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        {/* <Route path="/" component={HomePage} /> */}
-        <Route path="/home" component={HomePage} />
+        <Route path="/" component={HomePage} />
+        {/* <Route path="/home" component={HomePage} />
         <Route path="/login" component={LoginPage} />
-        <Route path="/" component={SignUpPage} />
+        <Route path="/" component={SignUpPage} /> */}
         {/* <Route path="/" component={IntroPage} /> */}
       </Switch>
     </Router>

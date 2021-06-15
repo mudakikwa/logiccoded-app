@@ -43,7 +43,7 @@ export default function Body() {
                   </h6>
                 </div>
                 <div className="row d-flex justify-content-between mx-0 px-0">
-                  <div className="col-md-6 d-flex justify-content-start px-0"></div>
+                  <div className="col-md-6 d-flex justify-content-start px-0" />
                   <div>
                     <h1 className="numbering">01</h1>
                   </div>
@@ -75,7 +75,7 @@ export default function Body() {
                   </h6>
                 </div>
                 <div className="row d-flex justify-content-between mx-0 px-0">
-                  <div className="col-md-6 d-flex justify-content-start px-0"></div>
+                  <div className="col-md-6 d-flex justify-content-start px-0" />
                   <div>
                     <h1 className="numbering">02</h1>
                   </div>
@@ -107,7 +107,7 @@ export default function Body() {
                   </h6>
                 </div>
                 <div className="row d-flex justify-content-between mx-0 px-0">
-                  <div className="col-md-6 d-flex justify-content-start px-0"></div>
+                  <div className="col-md-6 d-flex justify-content-start px-0" />
                   <div>
                     <h1 className="numbering">03</h1>
                   </div>
@@ -139,7 +139,7 @@ export default function Body() {
                   </h6>
                 </div>
                 <div className="row d-flex justify-content-between mx-0 px-0">
-                  <div className="col-md-6 d-flex justify-content-start px-0"></div>
+                  <div className="col-md-6 d-flex justify-content-start px-0" />
                   <div>
                     <h1 className="numbering">04</h1>
                   </div>
@@ -171,7 +171,7 @@ export default function Body() {
                   </h6>
                 </div>
                 <div className="row d-flex justify-content-between mx-0 px-0">
-                  <div className="col-md-6 d-flex justify-content-start px-0"></div>
+                  <div className="col-md-6 d-flex justify-content-start px-0" />
                   <div>
                     <h1 className="numbering">05</h1>
                   </div>
