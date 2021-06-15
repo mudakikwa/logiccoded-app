@@ -51,7 +51,7 @@ export default function FeedBack() {
             try {
               const addFeedBack = await AddFeedBack({
                 variables: {
-                  userId: 'testing hello',
+                  userId: localStorage.getItem('userId'),
                   feedback: input.value,
                 },
               });

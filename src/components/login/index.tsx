@@ -41,6 +41,7 @@ export default function Login() {
         if (data) {
           dispatch(
             addAuth({
+              id:data.Login._id,
               token: data.Login.token,
               tokenExpiration: data.Login.tokenExpiration,
             })
