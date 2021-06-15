@@ -1,4 +1,5 @@
 @import '../sass/variables.scss';
+
 #like {
   width: 100vw;
   height: 100vh;
@@ -12,13 +13,25 @@
   background-color: rgba($color: #121312, $alpha: 0.76);
   display: grid;
   place-items: center;
-  .icons{
-    padding-right:(69px/$divider);
+
+  .icons {
+    padding-right: (69px/$divider);
   }
+  .banner{
+    margin-left: -15px;
+  }
+
   svg {
     width: (104px/$divider);
     padding-left: 15px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      filter: grayscale(0%);
+    }
   }
+
   .panel {
     width: 40vw;
     border-radius: 9px / $divider;
@@ -31,14 +44,18 @@
     padding-left: 30px;
     padding-bottom: 30px;
     background-position: top right;
+
     .close {
       float: right;
       opacity: 1;
+
       svg {
         width: (40px / $divider);
         background: transparent;
+        filter: grayscale(100%);
       }
     }
+
     .title {
       h3 {
         font-family: $graphik-medium;
@@ -49,6 +66,7 @@
         color: $white;
         margin-bottom: (18px / $divider);
       }
+
       h6 {
         font-family: $graphik-light;
         font-weight: normal;
