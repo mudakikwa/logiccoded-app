@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const panelData = createSlice({
   name: 'panelData',
   initialState: {
-    feedBack: true,
+    feedBack: false,
     rate: false,
   },
   reducers: {

@@ -1,6 +1,7 @@
 @import '../sass/variables.scss';
 .btn-loading,
-.btn-error {
+.btn-error,
+.btn-success {
   background-color: #7171ff;
   height: (60px / $divider);
   color: $white;
@@ -24,6 +25,11 @@
 
 .btn-error {
   background-color: #FF7171;
+}
+
+.btn-success {
+  background-color: #5DD97C;
+  color:#000;
 }
 #signup {
   .onboard {

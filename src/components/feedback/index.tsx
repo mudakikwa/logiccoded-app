@@ -6,6 +6,8 @@ import { useMutation, gql } from '@apollo/client';
 import Close from './src/close';
 import { hideFeedBack } from '../../redux/panelStates';
 import Error from '../error/index';
+import Loading from '../loading/index';
+import Sucess from '../sucess/index';
 
 export default function FeedBack() {
   let input;
@@ -19,7 +21,8 @@ export default function FeedBack() {
     }
   `;
   const [errorData, seterrorData] = useState(null);
-  const [AddFeedBack, { data, error }] = useMutation(ADD_FEEDBACK, {
+  const [suceess, setsuceess] = useState(null);
+  const [AddFeedBack, { data, loading, error }] = useMutation(ADD_FEEDBACK, {
     errorPolicy: 'all',
   });
 
@@ -37,11 +40,14 @@ export default function FeedBack() {
             to send feedback
           </h6>
         </div>
+        {suceess && <Sucess text="FeedBack submitted" />}
         {errorData && <Error error={errorData} />}
+        {loading && <Loading />}
         <form
           className="form"
           onSubmit={async (e) => {
             e.preventDefault();
+            setsuceess(null);
             try {
               const addFeedBack = await AddFeedBack({
                 variables: {
@@ -50,7 +56,7 @@ export default function FeedBack() {
                 },
               });
               if (addFeedBack) {
-                dispatch(hideFeedBack());
+                setsuceess(true);
               }
             } catch (errorOccured) {
               if (error) {
