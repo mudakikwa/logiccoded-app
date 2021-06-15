@@ -5,7 +5,7 @@ export const panelData = createSlice({
   name: 'panelData',
   initialState: {
     feedBack: false,
-    rate: true,
+    rate: false,
   },
   reducers: {
     showFeedBack: (state) => {
