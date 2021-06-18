@@ -6,6 +6,7 @@ export const panelData = createSlice({
   initialState: {
     feedBack: false,
     rate: false,
+    shutDown: false,
   },
   reducers: {
     showFeedBack: (state) => {
@@ -20,6 +21,12 @@ export const panelData = createSlice({
     hideRate: (state) => {
       state.rate = false;
     },
+    showShutDown: (state) => {
+      state.shutDown = true;
+    },
+    hideShutDown: (state) => {
+      state.shutDown = false;
+    },
   },
 });
 
@@ -28,6 +35,8 @@ export const {
   hideFeedBack,
   showRate,
   hideRate,
+  showShutDown,
+  hideShutDown,
 } = panelData.actions;
 
 export default panelData.reducer;
