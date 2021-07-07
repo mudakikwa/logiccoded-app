@@ -16,6 +16,7 @@ export default function Login() {
         _id
         token
         tokenExpiration
+        username
       }
     }
   `;
@@ -41,9 +42,10 @@ export default function Login() {
         if (data) {
           dispatch(
             addAuth({
-              id:data.Login._id,
+              id: data.Login._id,
               token: data.Login.token,
               tokenExpiration: data.Login.tokenExpiration,
+              username: data.Login.username,
             })
           );
           history.push('/home');
@@ -51,6 +53,7 @@ export default function Login() {
       }
     } catch (e) {
       seterrorData(e.networkError.result.errors[0].message);
+      console.log(e);
     }
   };
   return (

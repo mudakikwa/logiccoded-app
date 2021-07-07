@@ -1,11 +1,12 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 import './index.scss';
 
-import { Link } from 'react-router-dom';
 import Logo from './src/logo.svg';
 
 export default function Header() {
+  const history = useHistory();
   return (
     <div className="container-fluid" id="header">
       <div className="row d-flex justify-content-between">
@@ -58,37 +59,39 @@ export default function Header() {
               </svg>
             </div>
             <div className="col-md-4 d-flex justify-content-end px-0">
-              <Link to="/login">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="22"
-                  viewBox="0 0 20 22"
-                >
-                  <g id="lock" transform="translate(-2 -1)">
-                    <path
-                      id="Path_118"
-                      data-name="Path 118"
-                      d="M2,0H16a2,2,0,0,1,2,2V9a2,2,0,0,1-2,2H2A2,2,0,0,1,0,9V2A2,2,0,0,1,2,0Z"
-                      transform="translate(3 11)"
-                      fill="none"
-                      stroke="#d2ded2"
-                      strokeLinecap="round"
-                      strokeWidth="2"
-                    />
-                    <path
-                      id="Path_117"
-                      data-name="Path 117"
-                      d="M7,11V7A5,5,0,0,1,17,7v4"
-                      fill="none"
-                      stroke="#d2ded2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                    />
-                  </g>
-                </svg>
-              </Link>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="22"
+                viewBox="0 0 20 22"
+                onClick={(e) => {
+                  e.preventDefault();
+                  history.push('/login');
+                }}
+              >
+                <g id="lock" transform="translate(-2 -1)">
+                  <path
+                    id="Path_118"
+                    data-name="Path 118"
+                    d="M2,0H16a2,2,0,0,1,2,2V9a2,2,0,0,1-2,2H2A2,2,0,0,1,0,9V2A2,2,0,0,1,2,0Z"
+                    transform="translate(3 11)"
+                    fill="none"
+                    stroke="#d2ded2"
+                    strokeLinecap="round"
+                    strokeWidth="2"
+                  />
+                  <path
+                    id="Path_117"
+                    data-name="Path 117"
+                    d="M7,11V7A5,5,0,0,1,17,7v4"
+                    fill="none"
+                    stroke="#d2ded2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  />
+                </g>
+              </svg>
             </div>
             <div className="col-md-4 d-flex justify-content-end px-0">
               <svg

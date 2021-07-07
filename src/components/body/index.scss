@@ -55,6 +55,10 @@
     background: #121312;
     display: grid;
     place-items: center;
+    img{
+      width:51.43px;
+      height:auto;
+    }
   }
   .title {
     font-family: $graphik-light;

@@ -1,0 +1,40 @@
+@import '../sass/variables.scss';
+#add-code{
+  min-height:100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:10000;
+  width: 1920px;
+  height: 1080px;
+  background: #1c1c1c;
+  padding: (50px/$divider);
+  .col-md-6{
+    padding-left: (50px/$divider);
+    padding-right: 0px;
+    .back-mg{
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: calc(100vh - 75px);
+      border-top-left-radius:(27px/$divider);
+      border-bottom-left-radius: (27px/$divider);
+    }
+  }
+  .add-code-form{
+    padding-right: (50px/$divider);
+    padding-left: 0px;
+    .form-data {
+      min-height: calc(100vh - 75px);
+      background-color: #121312;
+      padding-top: (41px/$divider);
+      padding-left: (64.5px/$divider);
+      border-top-right-radius:(27px/$divider);
+      border-bottom-right-radius: (27px/$divider);
+    }
+  }
+}
