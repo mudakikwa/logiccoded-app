@@ -9,7 +9,7 @@
   position: absolute;
   top:0;
   left:0;
-  z-index:10000;
+  z-index:100;
   width: 1920px;
   height: 1080px;
   background: #1c1c1c;
@@ -27,14 +27,68 @@
   }
   .add-code-form{
     padding-right: (50px/$divider);
-    padding-left: 0px;
+    padding-left: (0px/$divider);
     .form-data {
       min-height: calc(100vh - 75px);
       background-color: #121312;
       padding-top: (41px/$divider);
       padding-left: (64.5px/$divider);
+      padding-right: (64.5px/$divider);
       border-top-right-radius:(27px/$divider);
       border-bottom-right-radius: (27px/$divider);
+      h3{
+        font-family: $graphik-medium;
+        font-weight: 500;
+        font-size: (37px/$divider);
+        text-align: left;
+        color: #fff;
+        margin-bottom: (7px/$divider);
+      }
+      h6{
+        width: 402px;
+        height: 48px;
+        font-family: $graphik-light;
+        font-weight: 300;
+        font-size: (19px/$divider);
+        text-align: left;
+        color: $pure-white;
+        opacity: 0.5;
+      }
+      .input-group{
+        width:100%;
+        border:2px solid #fff;
+        background-color: rgba($color: #000000, $alpha: 0);
+        border-radius: (9px/$divider);
+        background: transparent;
+        margin-bottom: (31px/$divider)!important;
+        .input-group-prepend{
+          .input-group-text{
+            background-color: rgba($color: #000000, $alpha: 0);
+            border:none;
+          }
+        }
+        input{
+          width:calc(100% - 47px);
+          background-color: rgba($color: #000000, $alpha: 0);
+          border:none;
+          font-family: $graphik-light;
+          font-weight: normal;
+          font-size: (19px/$divider);
+          text-align: left;
+          color: $pure-white;
+          opacity: 0.38;
+
+          &:focus{
+            outline: none;
+          }
+          &:hover{
+            outline: none;
+          }
+        }
+        .code{
+          height:40vh;
+        }
+      }
     }
   }
 }

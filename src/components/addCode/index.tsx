@@ -1,6 +1,8 @@
 import { url } from 'inspector';
 import React from 'react';
 import background from './src/back.jpg';
+import TitleIcon from './src/titleIcon';
+import CodeIcons from './src/codeIcons';
 
 export default function AddCode() {
   return (
@@ -18,18 +20,32 @@ export default function AddCode() {
             <form action="" className="form-data">
               <h3>Add code</h3>
               <h6>
-                Add code that you wish to share here , please describe it cause
-                it helps more.
+                Add code that you wish to share here
               </h6>
               <div className="input-group mb-2">
                 <div className="input-group-prepend">
-                  <div className="input-group-text">@</div>
+                  <div className="input-group-text">
+                    <TitleIcon />
+                  </div>
                 </div>
                 <input
                   type="text"
                   className="control"
                   id="code-title"
-                  placeholder="insert code title"
+                  placeholder="Lorem ipsum dolor sit amet, consetetur."
+                />
+              </div>
+              <div className="input-group mb-2">
+                <div className="input-group-prepend">
+                  <div className="input-group-text">
+                    <CodeIcons />
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  className="control code"
+                  id="code-title"
+                  placeholder="Lorem ipsum dolor sit amet, consetetur."
                 />
               </div>
             </form>
