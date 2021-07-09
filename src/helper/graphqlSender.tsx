@@ -14,7 +14,7 @@ export const queryData = async (mutation, variablesData) => {
     headers: {
       'Content-Type': 'application/json',
     },
-    data: data,
+    data,
   };
   try {
     const request = await axios(config);

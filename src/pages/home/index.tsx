@@ -5,6 +5,7 @@ import SideBar from '../../components/sidebar/index';
 import Body from '../../components/body/index';
 import FeedBack from '../../components/feedback/index';
 import Rate from '../../components/rate/index';
+import AddCode from '../../components/addCode';
 
 export default function HomePage() {
   const { feedBack } = useSelector((state) => state.panelData);
@@ -17,10 +18,11 @@ export default function HomePage() {
   });
   return (
     <div>
+      <AddCode />
       {rate && <Rate />}
       {feedBack && <FeedBack />}
-      <Header />
       <div className="container-fluid">
+      <Header />
         <div className="row">
           <SideBar />
           <Body />

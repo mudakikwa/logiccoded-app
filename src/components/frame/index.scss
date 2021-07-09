@@ -1,5 +1,9 @@
 @import '../sass/variables.scss';
 #frame{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10000;
   .d-flex{
     height: (45px/$divider);
     background: #262926;

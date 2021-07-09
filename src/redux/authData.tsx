@@ -10,6 +10,7 @@ const authSlice = createSlice({
     addAuth: (state, action) => {
       localStorage.setItem('token', action.payload.token);
       localStorage.setItem('userId', action.payload.id);
+      localStorage.setItem('username', action.payload.username);
       state.token = action.payload.token;
       state.tokenExpiration = action.payload.tokenExpiration;
     },

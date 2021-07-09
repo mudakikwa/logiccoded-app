@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useMutation, gql } from '@apollo/client';
 import { addFolder } from '../../redux/appData';
 import { showFeedBack, showRate } from '../../redux/panelStates';
 
@@ -12,6 +13,22 @@ import ProfileImg from './src/profile.jpg';
 export default function SideBar() {
   const { folder } = useSelector((state) => state.appData);
   const { feedBack } = useSelector((state) => state.panelData);
+  const MUTATION = gql`
+    mutation {
+      CallCode(
+        query: {
+          codeTitle: "Connection to database"
+          userId: "test"
+          language: "js"
+        }
+      ) {
+        title
+        code
+        description
+      }
+    }
+  `;
+  const [CallCode] = useMutation(MUTATION);
   const dispatch = useDispatch();
   const handleAddFile = async () => {
     const { dialog } = require('electron').remote;
@@ -27,12 +44,10 @@ export default function SideBar() {
   };
   useEffect(() => {
     if (folder) {
-      // console.log(folder[0]);
-      watcher(folder[0]);
+      if (MUTATION) {
+        watcher(folder[0], CallCode);
+      }
     }
-    // return () => {
-    //   cleanup
-    // }
   }, [folder]);
   return (
     <div className="col-md-1" id="sidebar">
@@ -182,7 +197,7 @@ export default function SideBar() {
       </div>
       <div className="user">
         <div className="row">
-          <h6 className="px-0 mx-0">Nikita Belov</h6>
+          <h6 className="px-0 mx-0">{localStorage.getItem('username')}</h6>
         </div>
         <div className="row">
           <div
